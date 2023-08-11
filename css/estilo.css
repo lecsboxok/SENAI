@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --amarelo: #FFC745;
+    --branco: #FEFDFD;
+}
+
 body {
     font-family: 'Bebas Neue';
 }
@@ -17,7 +22,8 @@ body {
 }
 
 header {
-    background-color: #F9003D;
+    background-color: #ff0000;
+    /* background-color: #F9003D; */
     height: 80px;
     position: fixed;
     width: 100vw;
@@ -57,7 +63,7 @@ header {
 }
 
 .botao{
-    background-color: #A259F7;
+    background-color: var(--amarelo);
     height: 45px;
     width: 150px;
     text-align: center;
@@ -122,13 +128,14 @@ h1 {
 }
 
 .sobre-projetos {
+    /* background-color: var(--branco); */
     background-color: #080324;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .sobre-projetos h2 {
-    color: #F9003D;
+    color: #1DF281;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -239,7 +246,8 @@ h1 {
 
 footer {
     height: 80px;
-    background-color: #F9003D;
+    background-color: #ff0000;
+    /* background-color: #F9003D; */
     color: white;
     display: flex;
     justify-content: center;
