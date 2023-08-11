@@ -9,6 +9,7 @@
 :root {
     --amarelo: #FFC745;
     --branco: #FEFDFD;
+    --vermelho: #E02E16;
 }
 
 body {
@@ -22,8 +23,8 @@ body {
 }
 
 header {
-    background-color: #ff0000;
     /* background-color: #F9003D; */
+    background-color: #BF1717;
     height: 80px;
     position: fixed;
     width: 100vw;
@@ -41,6 +42,10 @@ header {
     height: 40px;
 }
 
+.menu-barras {
+    display: none;
+}
+
 .menu-header {
     width: 50%;
     display: flex;
@@ -52,24 +57,25 @@ header {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.70em;
     transition: 0.5s;
 }
 
 .menu-header a:hover:not(.botao) {
-    font-size: 1.6em;
+    font-size: 1.9em;
     transition: 0.5s;
     text-shadow: 4px 4px 6px #0000007a;
 }
 
 .botao{
-    background-color: var(--amarelo);
+    background-color: #BF1717;
+    color: var(--vermelho);
     height: 45px;
     width: 150px;
     text-align: center;
     line-height: 47px;
     font-size: 1.5em !important;
-    border: solid 1px #080324;
+    border: solid 1px var(--branco);
 }
 
 .botao:hover{
@@ -95,7 +101,7 @@ header {
 
 .conteudo-banner {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 100%;
 }
 
@@ -117,7 +123,7 @@ h1 {
 
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: #F9003D;
+    color: #50F2F2;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -129,13 +135,13 @@ h1 {
 
 .sobre-projetos {
     /* background-color: var(--branco); */
-    background-color: #080324;
+    background-color: #1D0417;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .sobre-projetos h2 {
-    color: #1DF281;
+    color: #50F2F2;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -155,7 +161,7 @@ h1 {
 }
 
 .texto-participantes {
-    color: white;
+    color: var(--amarelo);
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-size: 25px;
@@ -163,7 +169,7 @@ h1 {
 }
 
 .conteudo-sobre h3 {
-    color: #FFAF00;
+    color: #50F2F2;
     font-size: 45px;
     font-weight: 500;
 }
@@ -216,37 +222,38 @@ h1 {
 .conteudo-endereco {
     margin: 0 auto;
     max-width: 850px;
+    position: relative;
 }
 
 .conteudo-endereco h2 {
-    color: #FFAF00;
+    color: var(--branco);
     font-size: 50px;
     font-weight: 500;
 }
 
 .texto-endereco {
-    display: flex;
-    align-items: center;
-    background-color: #010010;
+    color: #A259F7;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(254, 253, 253, 0.1);
     border: solid 2px #A259F7;
     padding: 55px 55px;
 }
 
 .texto-endereco p {
-    color: #A259F7;
-    font-family: 'Courier New', Courier, monospace;
     width: 400px;
     font-size: 20px;
 }
 
 .mapa {
     width: 250px;
-
+    position: absolute;
+    top: 0px;
+    right: 20px;
 }
 
 footer {
     height: 80px;
-    background-color: #ff0000;
+    background-color: #BF1717;
     /* background-color: #F9003D; */
     color: white;
     display: flex;
