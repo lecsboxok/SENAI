@@ -9,7 +9,7 @@
 :root {
     --amarelo: #FFC745;
     --branco: #FEFDFD;
-    --vermelho: #E02E16;
+    --vermelho: #8C1115;
 }
 
 body {
@@ -24,7 +24,8 @@ body {
 
 header {
     /* background-color: #F9003D; */
-    background-color: #BF1717;
+    background-color: var(--vermelho);
+    /* background: #BF171766; */
     height: 80px;
     position: fixed;
     width: 100vw;
@@ -40,6 +41,7 @@ header {
 
 .logo{
     height: 40px;
+    /* background-color: #BF1717; */
 }
 
 .menu-barras {
@@ -68,7 +70,6 @@ header {
 }
 
 .botao{
-    background-color: #BF1717;
     color: var(--vermelho);
     height: 45px;
     width: 150px;
@@ -123,7 +124,7 @@ h1 {
 
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: #50F2F2;
+    color: #FEFDFD;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -135,13 +136,13 @@ h1 {
 
 .sobre-projetos {
     /* background-color: var(--branco); */
-    background-color: #1D0417;
+    background-color: #01010D;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .sobre-projetos h2 {
-    color: #50F2F2;
+    color: #FEFDFD;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -169,7 +170,7 @@ h1 {
 }
 
 .conteudo-sobre h3 {
-    color: #50F2F2;
+    color: #FEFDFD;
     font-size: 45px;
     font-weight: 500;
 }
@@ -232,7 +233,7 @@ h1 {
 }
 
 .texto-endereco {
-    color: #A259F7;
+    color: var(--branco);
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(254, 253, 253, 0.1);
     border: solid 2px #A259F7;
@@ -253,7 +254,7 @@ h1 {
 
 footer {
     height: 80px;
-    background-color: #BF1717;
+    background-color: var(--vermelho);
     /* background-color: #F9003D; */
     color: white;
     display: flex;
